@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Von Antonino</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="site-nav" role="banner">
+    <div class="nav-inner">
+      <div class="brand">Von Antonino</div>
+
+      <nav class="desktop-nav d-none d-lg-flex" aria-label="Primary">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#tour">Tour</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="offcanvas offcanvas-end" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5>Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a class="nav-link" href="#hero">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#tour">Tour</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+  </div>
+
+  
+  <main>
+
+    
+    <section id="hero" class="row">
+      <div class="col hero-left">
+        <div class="intro-block reveal">
+          <div class="intro-h1">Hi, I'm</div>
+          <h2 class="hero-name">Von Antonino</h2>
+        </div>
+
+        <p id="subtitle" class="hero-sub reveal"></p>
+
+        <div class="socials reveal">
+          <a href="https://www.instagram.com/_miconueva/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/bugsighco" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div id="about" class="about-panel reveal">
+          <h3>About Me</h3>
+          <p>
+            I design smooth, modern, and responsive user experiences with a strong focus on 
+            clarity, usability, and performance.
+          </p>
+          <div class="cta-row">
+            <a class="cta-btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto hero-right reveal">
+        <div class="profile-frame">
+          <img src="von.png" class="about-img" alt="Profile">
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="skills-wrap">
+      <div class="skills-inner">
+        <div id="skillsPanel" class="skills-panel">
+
+          <div class="skill"><i class="fab fa-html5"></i><div>HTML</div></div>
+          <div class="skill"><i class="fab fa-css3-alt"></i><div>CSS</div></div>
+          <div class="skill"><i class="fab fa-js-square"></i><div>JavaScript</div></div>
+          <div class="skill"><i class="fab fa-react"></i><div>React</div></div>
+          <div class="skill"><i class="fas fa-mobile-alt"></i><div>Responsive</div></i></div>
+          <div class="skill"><i class="fab fa-python"></i><div>Python</div></div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="education" class="mt-5">
+      <h2 class="reveal">Education</h2>
+
+      <div class="row mt-3">
+        <div class="col-md-4 reveal">
+          <div class="edu-card">
+            <img src="school.png" class="edu-logo" alt="Elementary">
+            <h5>Elementary</h5>
+            <p>Rizal Memorial Colleges, Inc.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="edu-card">
+            <img src="school.png" class="edu-logo" alt="High School">
+            <h5>High School</h5>
+            <p>Rizal Memorial Colleges, Inc.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="edu-card">
+            <img src="school.png" class="edu-logo" alt="Senior High School">
+            <h5>Senior High School</h5>
+            <p>Rizal Memorial Colleges, Inc.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="edu-card">
+            <img src="school3.png" class="edu-logo" alt="College">
+            <h5>College</h5>
+            <p>Holy Cross of Davao College – BSIT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="tour" class="mt-5">
+      <h2 class="reveal">Educational Tour — Cebu & Bohol</h2>
+
+      <div class="tour-grid reveal mt-3">
+
+       
+        <div class="tour-card">
+          <strong>Day 1</strong>
+          <p class="text-muted mt-2">Worldtech Information Solutions Inc.</p>
+
+          <p>
+            <strong>Observations:</strong> Worldtech showed itself as a strong and reputable IT 
+            training and consultancy company with branches in Cebu, Manila, and other major areas. 
+            They place a big emphasis on cybersecurity and offer certification programs taught 
+            by highly experienced professionals.
+          </p>
+
+          <p>
+            <strong>Learnings:</strong> I learned the importance of hands-on training in developing 
+            real-world IT skills. Their strong focus on cybersecurity highlighted how essential 
+            it is for organizations to stay protected against digital threats.
+          </p>
+        </div>
+
+     
+        <div class="tour-card">
+          <strong>Day 2</strong>
+          <p class="text-muted mt-2">Rivan IT and Codechum</p>
+
+          <p><strong>First stop: Rivan IT</strong></p>
+          <p>
+            <strong>Observations:</strong> Rivan IT Cebu’s training center is well-organized and highly 
+            professional. Their networking and certification courses are handled by skilled instructors 
+            who build strong technical foundations.
+          </p>
+          <p>
+            <strong>Learnings:</strong> I learned how structured training environments help students 
+            gain real-world competencies and confidence in the IT field.
+          </p>
+
+          <p><strong>Second stop: Codechum</strong></p>
+          <p>
+            <strong>Observations:</strong> Codechum is a user-friendly coding platform with automated 
+            checking and multi-language support, making it great for students and teachers.
+          </p>
+          <p>
+            <strong>Learnings:</strong> I learned how instant feedback improves coding skills and how 
+            Codechum helps reduce cheating by monitoring submissions effectively.
+          </p>
+        </div>
+
+      
+        <div class="tour-card">
+          <strong>Day 3</strong>
+          <p class="text-muted mt-2">MATA Technologies, Inc.</p>
+
+          <p>
+            <strong>Observations:</strong> MATA Technologies showcased impressive innovation in virtual 
+            reality and digital tours. Their team demonstrated immersive VR experiences tailored for 
+            tourism and real estate.
+          </p>
+
+          <p>
+            <strong>Learnings:</strong> I learned how VR technology can elevate industries by offering 
+            interactive and accessible digital experiences.
+          </p>
+        </div>
+
+        
+        <div class="tour-card">
+          <strong>Day 4</strong>
+          <p class="text-muted mt-2">TaRSIER 117</p>
+
+          <p>
+            <strong>Observations:</strong> TaRSIER 117’s emergency response system is highly organized 
+            and well-prepared. Coordination with government agencies showed their strong commitment to 
+            public safety.
+          </p>
+
+          <p>
+            <strong>Learnings:</strong> I learned how proper planning, teamwork, and emergency readiness 
+            greatly improve community safety.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="documentary" class="mt-5">
+      <h2 class="reveal">DOCUMENTARY</h2>
+
+      <div class="row mt-3">
+        <div class="col-md-4 reveal"><img src="pic1.jpg" class="img-fluid"></div>
+        <div class="col-md-4 reveal"><img src="pic2.jpg" class="img-fluid"></div>
+        <div class="col-md-4 reveal"><img src="pic3.jpg" class="img-fluid"></div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-4 reveal"><img src="airport.jpg" class="img-fluid"></div>
+        <div class="col-md-4 reveal"><img src="com.jpg" class="img-fluid"></div>
+        <div class="col-md-4 reveal"><img src="pic12.jpg" class="img-fluid"></div>
+      </div>
+    </section>
+
+  
+    <section id="contact" class="mt-5">
+      <h2 class="reveal">Contact</h2>
+
+      <div class="contact-grid reveal">
+        <div class="contact-left">
+          <form id="contactForm" onsubmit="handleContact(event)">
+            <label>Name</label>
+            <input id="cname" required>
+
+            <label>Email</label>
+            <input id="cemail" type="email" required>
+
+            <label>Message</label>
+            <textarea id="cmessage" rows="6" required></textarea>
+
+            <button class="send-btn cta-btn" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <aside class="contact-right">
+          <h4>Contact Details</h4>
+          <p>Email: Von.Antonino@hcdc.edu.ph</p>
+          <p>Phone: 091234567</p>
+          <p>Location: Davao City</p>
+        </aside>
+      </div>
+    </section>
+
+
+    <footer class="text-center mt-5 mb-4">
+      <p>© 2025 Von Antonino</p>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
