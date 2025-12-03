@@ -197,7 +197,7 @@
     place-items:center;
     animation:soft-bounce 4s ease-in-out infinite;
     will-change:transform;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .about-img{
     width:100%;
@@ -391,7 +391,7 @@
     .profile-frame{
       width:200px;
       height:200px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .skill{
       min-width:120px;
