@@ -125,37 +125,5 @@
     }
   });
 
-  (function(){
-    const KEY = 'preferredTheme';
-    const root = document.documentElement;
-    const btn = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
 
-    function applyTheme(t){
-      if(t === 'dark'){
-        root.setAttribute('data-theme','dark');
-        icon.className = 'fa fa-moon';
-        btn.style.borderColor = 'rgba(255,255,255,0.06)';
-      } else {
-        root.removeAttribute('data-theme');
-        icon.className = 'fa fa-sun';
-        btn.style.borderColor = 'rgba(0,0,0,0.06)';
-      }
-    }
-
-    
-    const stored = localStorage.getItem(KEY);
-    if(stored){ applyTheme(stored); }
-    else {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      applyTheme(prefersDark ? 'dark' : 'light');
-    }
-
-    btn.addEventListener('click', ()=>{
-      const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      applyTheme(next);
-      localStorage.setItem(KEY,next);
-    });
-  })();
 
