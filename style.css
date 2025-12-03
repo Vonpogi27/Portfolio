@@ -1,17 +1,5 @@
 :root{
-    --white:#ffffff;
-    --bg1:#ffffff;
-    --bg2:#f4f4f5;
-    --ink:#0b0b0b;
-    --muted:#6f6f74;
-    --border:rgba(11,11,11,0.08);
-    --shadow-md:0 12px 30px rgba(0,0,0,0.06);
-    --shadow-lg:0 18px 50px rgba(0,0,0,0.08);
-    --radius:16px;
-    --nav-h:70px;
-    --glass-light: rgba(255,255,255,0.88); 
-    --glass-light-border: rgba(11,11,11,0.06);
-    --glass-blur: 10px;
+   color-scheme: dark;
   }
 
   *{box-sizing:border-box}
