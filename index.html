@@ -5,21 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Von Antonino</title>
 
-  <script>
-  (function() {
-    const KEY = 'preferredTheme';
-    const stored = localStorage.getItem(KEY);
-
-    // Detect system preference if no stored value
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    const theme = stored ? stored : (prefersDark ? 'dark' : 'light');
-
-    if (theme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  })();
+ <script>
+  document.documentElement.setAttribute("data-theme", "dark");
 </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -307,4 +296,5 @@
 
 </body>
 </html>
+
 
