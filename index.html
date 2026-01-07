@@ -154,6 +154,9 @@
 
        
         <div class="tour-card">
+          <div class="tour-images">
+            <img src="worldtech.png" alt="Day 1 photo">
+          </div>
           <strong>Day 1</strong>
           <p class="text-muted mt-2">Worldtech Information Solutions Inc.</p>
 
@@ -173,6 +176,10 @@
 
      
         <div class="tour-card">
+          <div class="tour-images">
+            <img src="rivanit.png" alt="Rivan IT photo">
+            <img src="codechum.png" alt="Codechum photo">
+          </div>
           <strong>Day 2</strong>
           <p class="text-muted mt-2">Rivan IT and Codechum</p>
 
@@ -200,6 +207,9 @@
 
       
         <div class="tour-card">
+          <div class="tour-images">
+            <img src="mata.png" alt="Day 3 photo">
+          </div>
           <strong>Day 3</strong>
           <p class="text-muted mt-2">MATA Technologies, Inc.</p>
 
@@ -217,6 +227,9 @@
 
         
         <div class="tour-card">
+          <div class="tour-images">
+            <img src="tarsier117.png" alt="Day 4 photo">
+          </div>
           <strong>Day 4</strong>
           <p class="text-muted mt-2">TaRSIER 117</p>
 
@@ -287,6 +300,21 @@
     </footer>
 
   </main>
+
+  <!-- Image preview modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" style="right:12px;top:12px;z-index:10"></button>
+          <img id="modalImage" src="" alt="" style="width:100%;height:auto;display:block;border-radius:8px;">
+        </div>
+        <div class="modal-footer border-0" style="justify-content:center">
+          <small id="modalCaption" class="text-muted"></small>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 

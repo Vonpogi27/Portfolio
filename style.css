@@ -326,14 +326,37 @@
     backdrop-filter: blur(var(--glass-blur));
   }
 
+  .tour-images{
+    display:flex;
+    gap:10px;
+    margin-bottom:12px;
+  }
+  .tour-images img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px;
+    border:1px solid rgba(0,0,0,0.06);
+    display:block;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    cursor:pointer;
+  }
+  .tour-images img + img{ /* ensure images share space */
+    flex:1;
+  }
+  .tour-images img:first-child{flex:1}
+
   @media (max-width:980px){
     .tour-grid{grid-template-columns:1fr}
     .tour-card{font-size:14px;padding:12px}
     .tour-card p{font-size:12px}
+    .tour-images img{height:120px}
   }
   @media (max-width:640px){
     .tour-card{padding:10px}
     .tour-card p{font-size:10px}
+    .tour-images{gap:8px}
+    .tour-images img{height:100px}
   }
 
   .contact-grid{

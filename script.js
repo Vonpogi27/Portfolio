@@ -125,5 +125,25 @@
     }
   });
 
+  // Image modal preview for tour images
+  (function(){
+    const modalEl = document.getElementById('imageModal');
+    if(!modalEl) return;
+    const modalImage = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+    const bsModal = new bootstrap.Modal(modalEl);
+
+    document.querySelectorAll('.tour-images img').forEach(img => {
+      img.addEventListener('click', function(){
+        const src = this.getAttribute('src') || '';
+        const alt = this.getAttribute('alt') || '';
+        modalImage.src = src;
+        modalImage.alt = alt;
+        modalCaption.textContent = alt;
+        bsModal.show();
+      });
+    });
+  })();
+
 
 
